@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">📰 NewsHub</div>
+
+    <input type="text" id="searchInput" placeholder="Search articles..." class="search-input">
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <div id="sourceBar" class="source-bar"></div>
+
+  <main>
+    <div id="statusMsg" class="status-msg hidden"></div>
+    <div id="newsGrid" class="news-grid"></div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <span id="modalSource" class="modal-tag"></span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalSummary"></p>
+      <a id="modalLink" href="#" target="_blank" rel="noopener">Read full story →</a>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
